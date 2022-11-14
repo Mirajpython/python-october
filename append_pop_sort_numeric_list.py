@@ -34,14 +34,11 @@ def append_list():
             break
          else:
             try:
-             # Convert it into integer    
-             #num_item = int(get_item)
              my_list.append(int(get_item))
              continue
             #this is exception handling when entered non-numeric value
             except ValueError:
                try:
-                   #num_item = float(get_item)
                    my_list.append(float(get_item))
                    continue
                   #this is exception handling when entered value is string
